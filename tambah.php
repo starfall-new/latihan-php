@@ -22,17 +22,16 @@ if (isset($_POST['tambah'])) {
     <title>Tambah Data Siswa</title>
 </head>
 <body>
-    <h2>Tambah Data Siswa Baru</h2>
+    <p>Tambah Data Siswa Baru</p>
 
     <form action="" method="POST">
-        <label>Nama:</label><br>
+        <label>Nama:</label>
         <input type="text" name="nama" required><br><br>
         
-        <label>Kelas:</label><br>
+        <label>Kelas:</label>
         <input type="text" name="kelas" required><br><br>
         
         <button type="submit" name="tambah">Simpan Data</button>
-        <a href="index.php">Batal</a>
     </form>
 </body>
 </html>
