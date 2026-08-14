@@ -20,7 +20,7 @@ while($siswa = mysqli_fetch_assoc($data)) : ?>
     <td><?= $siswa['kelas']; ?></td>
     <td>
         <a href="edit.php?id=<?= $siswa['id']; ?>">Edit</a> | 
-        <a href="hapus.php?id=<?= $siswa['id']; ?>" onclick="return confirm('Yakin ingin menghapus data ini?')">Hapus</a>
+        <a href="hapus.php?id=<?= $siswa['id']; ?>" onclick="return confirm('Yakin mo menghapus data ini?')">Hapus</a>
     </td>
 </tr>
 <?php 
