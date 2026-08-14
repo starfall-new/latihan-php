@@ -19,7 +19,6 @@ if (isset($_POST['tambah'])) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Tambah Data Siswa</title>
 </head>
 <body>
     <p>Tambah Data Siswa Baru</p>

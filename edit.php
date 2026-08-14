@@ -29,23 +29,21 @@ if (isset($_POST['edit'])) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Edit Data Siswa</title>
 </head>
 <body>
-    <h2>Edit Data Siswa</h2>
+    <p>Edit Data Siswa</p>
 
     <?php if ($siswa) { ?>
     <form action="" method="POST">
         <input type="hidden" name="id" value="<?php echo $siswa['id']; ?>">
         
-        <label>Nama:</label><br>
+        <label>Nama:</label>
         <input type="text" name="nama" value="<?php echo $siswa['name']; ?>" required><br><br>
         
-        <label>Kelas:</label><br>
+        <label>Kelas:</label>
         <input type="text" name="kelas" value="<?php echo $siswa['kelas']; ?>" required><br><br>
         
         <button type="submit" name="edit">Simpan Perubahan</button>
-        <a href="index.php">Batal</a>
     </form>
     <?php } else { ?>
         <p>Data tidak ditemukan! Pastikan kamu masuk dari tombol Edit di index.php</p>
