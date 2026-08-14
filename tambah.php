@@ -8,7 +8,7 @@ if (isset($_POST['tambah'])) {
     $query = mysqli_query($koneksi, "INSERT INTO sekolah (nama, kelas) VALUES ('$nama', '$kelas')");
 
     if ($query) {
-        header("Location: index.php");
+        echo "Data gagal ditambahkan";
         exit;
     } else {
         echo "Data gagal ditambahkan: " . mysqli_error($koneksi);
@@ -21,7 +21,7 @@ if (isset($_POST['tambah'])) {
 <head>
 </head>
 <body>
-    <p>Tambah Data Siswa Baru</p>
+    <p>Tambah Data</p>
 
     <form action="" method="POST">
         <label>Nama:</label>

@@ -1,8 +1,6 @@
 <?php
 require_once('Connect.php');
 
-$siswa = null;
-
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
     $ambilData = mysqli_query($koneksi, "SELECT * FROM sekolah WHERE id = '$id'"); 
@@ -19,7 +17,7 @@ if (isset($_POST['edit'])) {
     $query = mysqli_query($koneksi, "UPDATE sekolah SET nama = '$nama', kelas = '$kelas' WHERE id = '$id'");
 
     if ($query) {
-        header("Location: index.php");
+        echo "Data berhasil di ubah";
         exit;
     } else {
         echo "Data gagal diubah: " . mysqli_error($koneksi);
@@ -31,7 +29,7 @@ if (isset($_POST['edit'])) {
 <head>
 </head>
 <body>
-    <p>Edit Data Siswa</p>
+    <p>Edit Data</p>
 
     <?php if ($siswa) { ?>
     <form action="" method="POST">
@@ -46,8 +44,7 @@ if (isset($_POST['edit'])) {
         <button type="submit" name="edit">Simpan Perubahan</button>
     </form>
     <?php } else { ?>
-        <p>Data tidak ditemukan! Pastikan kamu masuk dari tombol Edit di index.php</p>
-        <a href="index.php">Kembali</a>
+        <p>Data tidak ditemukan</p>
     <?php } ?>
 </body>
 </html>
