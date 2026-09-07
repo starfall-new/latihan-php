@@ -38,17 +38,17 @@ if (isset($_POST['tambah'])) {
             <form action="" method="POST">
                 <div class="mb-3">
                     <label class="form-label">Nisn</label>
-                    <input type="text" name="nisn" class="form-control" required>
+                    <input placeholder="Masukan Nisn" type="text" name="nisn" class="form-control" required>
                 </div>
 
                 <div class="mb-3">
                     <label class="form-label">Nama</label>
-                    <input type="text" name="nama" class="form-control" required>
+                    <input placeholder="Masukan Nama" type="text" name="nama" class="form-control" required>
                 </div>
                 
                 <div class="mb-3">
                     <label class="form-label">Kelas</label>
-                    <input type="text" name="kelas" class="form-control" required>
+                    <input placeholder="Masukan Kelas" type="text" name="kelas" class="form-control" required>
                 </div>
 
                 <div class="mb-3">

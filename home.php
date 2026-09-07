@@ -48,7 +48,7 @@
   <thead>
     <tr>
       <td scope="col">No</td>
-      <td scope="col">Nis</td>
+      <td scope="col">Nis</td> 
       <td scope="col">Nama</td>
       <td scope="col">Kelas</td>
       <td scope="col">Jurusan</td>
