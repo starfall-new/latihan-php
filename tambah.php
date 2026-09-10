@@ -7,7 +7,6 @@ if (isset($_POST['tambah'])) {
     $kelas = $_POST['kelas'];
     $jurusan = $_POST['jurusan'];
 
-    // Query diarahkan ke tabel murid
     $query = mysqli_query($koneksi, "INSERT INTO murid (nisn, name, kelas, jurusan) VALUES ('$nisn', '$nama', '$kelas', '$jurusan')");
 
     if ($query) {
